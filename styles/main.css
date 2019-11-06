@@ -764,7 +764,8 @@ input {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-left: 8%; }
+  -webkit-transform: translateX(3%);
+          transform: translateX(3%); }
   @media screen and (max-width: 670px) {
     .contact .container {
       -webkit-box-orient: vertical;
