@@ -2,6 +2,7 @@ html {
   font-family: Muli, sans-serif; }
 
 body {
+  overflow-x: hidden;
   background-color: #fcfcfd;
   line-height: 1.5; }
 
@@ -45,10 +46,6 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -60,8 +57,7 @@ input {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 150%; }
+    font-size: 16px; }
   @media screen and (min-width: 2000px) {
     .title {
       margin-left: 0; } }
@@ -303,11 +299,13 @@ input {
 
 .intro {
   background-image: url("../images/slider/slide-img-1.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   width: 70%;
   max-width: 1500px;
   margin-top: -320px;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   resize: both; }
   @media screen and (max-width: 1100px) {
@@ -502,6 +500,10 @@ input {
             -ms-flex-align: center;
                 align-items: center;
         padding-left: 0; } }
+    @media screen and (min-width: 1601px) {
+      .about__items {
+        width: 1500px;
+        margin: 0 auto; } }
   .about__item {
     position: relative; }
     .about__item:last-child {
@@ -545,6 +547,10 @@ input {
   padding-bottom: 290px;
   -webkit-transform: translateX(-2%);
           transform: translateX(-2%); }
+  @media screen and (min-width: 1601px) {
+    .process {
+      width: 1500px;
+      margin: 0 auto; } }
   @media screen and (max-width: 1100px) {
     .process {
       padding-bottom: 950px; }
@@ -894,13 +900,17 @@ input {
   padding-top: 165px;
   -webkit-transform: translateX(-2%);
           transform: translateX(-2%); }
+  @media screen and (min-width: 2000px) {
+    .testimonials {
+      margin-left: 5%; } }
   .testimonials__cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    -ms-flex-item-align: center;
-        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 70%;
     min-height: 460px;
     margin: 85px auto -100px; }
@@ -916,7 +926,7 @@ input {
         margin-bottom: 110px; } }
     @media screen and (min-width: 2000px) {
       .testimonials__cards {
-        width: 100%; } }
+        width: 1600px; } }
   .testimonials__card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1026,6 +1036,9 @@ input {
   background-image: url("../images/work/vps-bg.svg");
   background-size: contain;
   background-repeat: no-repeat; }
+  @media screen and (min-width: 1601px) {
+    .work {
+      background-position: center; } }
   .work__content {
     display: -webkit-box;
     display: -ms-flexbox;
